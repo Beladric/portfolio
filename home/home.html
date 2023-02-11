@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
+    <title>Kilian GOËTZ</title>
     <link rel="stylesheet" href="./home.css">
 </head>
 <body>
@@ -19,8 +19,12 @@
                 let listNavbar = document.getElementById('listNavbar');
                 let elementList = document.getElementsByClassName('elementList');
                 let divider = document.getElementById('divider');
+                let content = document.getElementById('content');
+                let footer = document.getElementById('footer');
 
                 if(this.classList.contains('opened')){
+                    content.style.display = 'none';
+                    footer.style.display = 'none';
                     navbar.style.height = 'calc(100vh - 60px)';
                     listNavbar.style.flexDirection = 'column';
                     listNavbar.style.paddingLeft = '0';
@@ -37,7 +41,9 @@
                         elementList[x].style.margin = '0';
                     }
                 }
-                else if(window.innerWidth<1000){
+                else{
+                    content.style.display = 'flex';
+                    footer.style.display = 'flex';
                     navbar.style.height = 'auto';
                     divider.style.display = 'none';
                     elementList[0].style.display = 'flex';
@@ -80,12 +86,44 @@
         </ul>
     </nav>
 </header>
-<section class="desktop">
+<main id="content">
+    <section id="desktop">
+        <section id="firstSectionHomeD">
+            <div id="picture">
 
-</section>
-<section class="Mobile">
+            </div>
+            <div id="presentation">
+                <p>Hello there, Nice to meet you. I am</p>
+                <p>Kilian</p>
+                <p>I'm a DevOps engineer, with strong skills in some technologies. I have a huge labour culture and an unlimited motivation, as I like to said 'I kneel down only to be knighted'.</p>
+            </div>
+        </section>
+    </section>
+    <section id="Mobile">
 
-</section>
+    </section>
+</main>
+<footer id="footer">
+    <span id="dividerFooter"></span>
+    <ul id="listFooter">
+        <li class="elementListFooter">
+            <img src="" alt="">
+            <a href="https://github.com/Beladric" target="_blank" class="elementLinkFooter">Github</a>
+        </li>
+        <li>
+            <img src="" alt="">
+            <a href="https://www.linkedin.com/in/kilian-goetz/" target="_blank" class="elementLinkFooter">LinkedIn</a>
+        </li>
+        <li>
+            <img src="" alt="">
+            <a href="" target="_blank" class="elementLinkFooter">Instagram</a>
+        </li>
+        <li>
+            <img src="" alt="">
+            <a href="" target="_blank" class="elementLinkFooter">Facebook</a>
+        </li>
+    </ul>
+</footer>
 <!--<script src="index.js"></script>-->
 </body>
 </html>
