@@ -17,6 +17,7 @@ body {
   flex-direction: row;
   align-items: center;
   margin: 0;
+  padding: 0;
 }
 
 .elementList {
@@ -145,6 +146,10 @@ body {
     padding: 30px 80px 30px 80px;
   }
 }
+#content {
+  min-height: 100vh;
+}
+
 #desktop {
   display: flex;
   flex-direction: column;
@@ -164,6 +169,72 @@ body {
 
 #presentation {
   width: 50%;
+}
+
+#footer {
+  width: 100%;
+  background-color: #1F2022;
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#listFooter {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#dividerFooter {
+  width: 80%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border-radius: 1px;
+  margin-bottom: 50px;
+}
+
+.elementListFooter {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.elementLinkFooter {
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #EEEEEE;
+}
+
+.dividersFooter {
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border-radius: 1px;
+}
+
+.elementLinkFooter:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
