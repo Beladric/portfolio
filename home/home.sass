@@ -141,9 +141,10 @@ body
   min-height: calc(100vh - 311px)
   background-color: #1F2022
 
+// Desktop
+
 #desktop
   display: flex
-  flex-direction: column
 
 #firstSectionHomeD
   background-color: #1F2022
@@ -161,6 +162,7 @@ body
 
 #presentation p
   margin: 0
+  width: 30vw
 
 #presentation p:first-of-type
   color: #EEEEEE
@@ -175,7 +177,6 @@ body
   font-family: Montserrat, sans-serif
   font-weight: 800
   line-height: 122px
-  width: 30vw
 
 #presentation p:last-of-type
   color: rgba(255,255,255, 0.6)
@@ -186,23 +187,57 @@ body
 #picture
   width: 50%
 
-#presentation
-  width: 50%
+// Mobile
+
+#mobile
+  display: none
+
+#firstSectionHomeM
+  background-color: #1F2022
+  width: 100%
+  min-height: calc(100vh - 311px)
+  display: flex
+  flex-direction: column
+
+#presentationM
+  display: flex
+  flex-direction: column
+  justify-content: center
+  width: 80%
+  padding: 10%
+
+#presentationM p
+  margin: 0
+
+#presentationM p:first-of-type
+  color: #EEEEEE
+  font-size: 18px
+  line-height: 27px
+  font-weight: 500
+  font-family: Poppins, sans-serif
+
+#presentationM p:nth-of-type(2)
+  color: #00ADB5
+  font-size: 100px
+  font-family: Montserrat, sans-serif
+  font-weight: 800
+  line-height: 122px
+
+#presentationM p:last-of-type
+  color: rgba(255,255,255, 0.6)
+  font-size: 16px
+  line-height: 30px
+  font-family: Poppins, sans-serif
+
+#pictureM
+  width: 100%
 
 @media screen and (max-width: 1000px)
-  #firstSectionHomeD
+  #mobile
+    display: flex
     flex-direction: column
-    height: auto
-    width: 100vw
-
-  #picture
-    height: auto
-    width: 100%
-
-  #presentation
-    padding: 10%
-    height: auto
-    width: auto
+  #desktop
+    display: none
 
 // SASS about footer
 
