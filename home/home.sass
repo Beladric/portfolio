@@ -3,6 +3,8 @@ body
   padding: 0
   background-color: #EEEEEE
 
+// SASS about navbar
+
 #navbar
   background-color: #1F2022
 
@@ -133,8 +135,11 @@ body
     justify-content: space-between
     padding: 30px 80px 30px 80px
 
+// SASS about content
+
 #content
-  min-height: 100vh
+  min-height: calc(100vh - 311px)
+  background-color: #1F2022
 
 #desktop
   display: flex
@@ -143,15 +148,63 @@ body
 #firstSectionHomeD
   background-color: #1F2022
   width: 100%
-  height: auto
+  height: calc(100vh - 100px)
   display: flex
   flex-direction: row
+
+#presentation
+  display: flex
+  flex-direction: column
+  height: 100%
+  justify-content: center
+  width: 50%
+
+#presentation p
+  margin: 0
+
+#presentation p:first-of-type
+  color: #EEEEEE
+  font-size: 18px
+  line-height: 27px
+  font-weight: 500
+  font-family: Poppins, sans-serif
+
+#presentation p:nth-of-type(2)
+  color: #00ADB5
+  font-size: 100px
+  font-family: Montserrat, sans-serif
+  font-weight: 800
+  line-height: 122px
+  width: 30vw
+
+#presentation p:last-of-type
+  color: rgba(255,255,255, 0.6)
+  font-size: 16px
+  line-height: 30px
+  font-family: Poppins, sans-serif
 
 #picture
   width: 50%
 
 #presentation
   width: 50%
+
+@media screen and (max-width: 1000px)
+  #firstSectionHomeD
+    flex-direction: column
+    height: auto
+    width: 100vw
+
+  #picture
+    height: auto
+    width: 100%
+
+  #presentation
+    padding: 10%
+    height: auto
+    width: auto
+
+// SASS about footer
 
 #footer
   width: 100%
