@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+}
+
+#navbar {
+  background-color: #1F2022;
+}
+
+#burgerMenu {
+  display: none;
+}
+
+#listNavbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.elementList {
+  list-style: none;
+  display: block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.elementList:first-of-type {
+  margin: 0 auto 0 80px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.elementList:last-of-type {
+  margin: 25px 80px 25px auto;
+  padding: 16px;
+  border-radius: 3px;
+  background-color: #EEEEEE;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.3s, color 0.3s ease-in-out;
+}
+.elementList:last-of-type .elementLink {
+  color: #000000;
+}
+
+.elementList:last-of-type:hover {
+  cursor: pointer;
+  box-shadow: inset 0 0 0 1px #EEEEEE;
+  background-color: transparent;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.3s, color 0.3s ease-in-out;
+}
+.elementList:last-of-type:hover .elementLink {
+  color: #EEEEEE;
+}
+
+.elementList:nth-of-type(n+2):nth-of-type(-n+4) {
+  margin-right: 20px;
+}
+
+.elementList:nth-of-type(n+3):nth-of-type(-n+5) {
+  margin-left: 20px;
+}
+
+.elementList:nth-of-type(n+2):nth-of-type(-n+5) .elementLink {
+  display: inline-block;
+  position: relative;
+}
+
+.elementList:nth-of-type(n+2):nth-of-type(-n+5) .elementLink::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #00ADB5;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.elementList:nth-of-type(n+2):nth-of-type(-n+5) .elementLink:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.elementLink {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+@media screen and (max-width: 1000px) {
+  .elementList:nth-of-type(n+2) {
+    display: none;
+  }
+  #burgerMenu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .burgerMenuLines {
+    fill: none;
+    stroke: #EEEEEE;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1), stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1), color ease-in-out 600ms;
+  }
+  .burgerMenuLines:first-of-type {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .burgerMenuLines:nth-of-type(2) {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .burgerMenuLines:last-of-type {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .burgerMenuLines {
+    stroke: red;
+  }
+  .opened .burgerMenuLines:first-of-type {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .burgerMenuLines:nth-of-type(2) {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .burgerMenuLines:last-of-type {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 80px 30px 80px;
+  }
+}
+#footer {
+  width: 100%;
+  background-color: #1F2022;
+  padding: 30px 0 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#listFooter {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 1920px;
+  justify-content: space-around;
+}
+
+#dividerFooter {
+  width: 80%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border-radius: 1px;
+  margin-bottom: 50px;
+}
+
+.elementListFooter {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-around;
+}
+
+.elementLinkFooter {
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  color: #EEEEEE;
+}
+
+.dividersFooter {
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+  border-radius: 1px;
+}
+
+.elementLinkFooter:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
