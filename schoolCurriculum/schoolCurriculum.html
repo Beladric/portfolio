@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kilian GOËTZ</title>
+    <link rel="stylesheet" href="./schoolCurriculum.css">
+</head>
+<body>
+<header>
+    <nav id="navbar">
+        <button id="burgerMenu"
+                onclick="
+                this.classList.toggle('opened');
+                this.setAttribute('aria-expanded', this.classList.contains('opened'));
+
+                let navbar = document.getElementById('navbar');
+                let listNavbar = document.getElementById('listNavbar');
+                let elementList = document.getElementsByClassName('elementList');
+                let divider = document.getElementById('divider');
+                let content = document.getElementById('content');
+                let footer = document.getElementById('footer');
+
+                if(this.classList.contains('opened')){
+                    content.style.display = 'none';
+                    footer.style.display = 'none';
+                    navbar.style.height = 'calc(100vh - 60px)';
+                    listNavbar.style.flexDirection = 'column';
+                    listNavbar.style.paddingLeft = '0';
+                    listNavbar.style.height = '100%';
+                    listNavbar.style.justifyContent = 'space-around';
+                    elementList[0].style.display = 'none';
+                    navbar.style.flexDirection = 'column';
+                    navbar.style.alignItems = 'center';
+                    divider.style.display = 'flex';
+                    divider.style.width = '100%';
+                    divider.style.borderBottom = '1px solid #EEEEEE';
+                    for(let x = 1; x < elementList.length; x++){
+                        elementList[x].style.display = 'block';
+                        elementList[x].style.margin = '0';
+                    }
+                }
+                else{
+                    content.style.display = 'flex';
+                    footer.style.display = 'flex';
+                    navbar.style.height = 'auto';
+                    divider.style.display = 'none';
+                    elementList[0].style.display = 'flex';
+                    navbar.style.alignItems = 'center'
+                    navbar.style.flexDirection = 'row';
+                    for(let x = 1; x < elementList.length; x++){
+                        elementList[x].style.display = 'none';
+                        elementList[x].style.margin = '0';
+                    }
+                }
+                "
+                aria-label="Main Menu"
+        >
+            <svg width="40" height="40" viewBox="0 0 100 100">
+                <path class="burgerMenuLines" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                <path class="burgerMenuLines" d="M 20,50 H 80" />
+                <path class="burgerMenuLines" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
+        <span id="divider"></span>
+        <ul id="listNavbar">
+            <li class="elementList">
+                <a href="../home/home.html" class="elementLink">Kilian</a>
+            </li>
+            <li class="elementList">
+                <a href="../home/home.html" class="elementLink">Home</a>
+            </li>
+            <li class="elementList">
+                <a href="../workExperience/workExperience.html" class="elementLink">Work experiences</a>
+            </li>
+            <li class="elementList">
+                <a href="./schoolCurriculum.html" class="elementLink">School curriculum</a>
+            </li>
+            <li class="elementList">
+                <a href="../projects/projects.html" class="elementLink">Projects</a>
+            </li>
+            <li class="elementList">
+                <a href="../contact/contact.html" class="elementLink">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content">
+    <section id="desktop">
+
+    </section>
+    <section id="mobile">
+
+    </section>
+</main>
+<footer id="footer">
+    <span id="dividerFooter"></span>
+    <ul id="listFooter">
+        <li class="elementListFooter">
+            <a href="https://github.com/Beladric" target="_blank" class="elementLinkFooter">Github</a>
+            <span class="dividersFooter"></span>
+            <img src="../resources/github.svg" alt="github" height="40px">
+        </li>
+        <li class="elementListFooter">
+            <a href="https://www.linkedin.com/in/kilian-goetz/" target="_blank" class="elementLinkFooter">LinkedIn</a>
+            <span class="dividersFooter"></span>
+            <img src="../resources/linkedin.svg" alt="linkedIn" height="40px">
+        </li>
+        <li class="elementListFooter">
+            <a href="" target="_blank" class="elementLinkFooter">Instagram</a>
+            <span class="dividersFooter"></span>
+            <img src="../resources/instagram.svg" alt="instagram" height="40px">
+        </li>
+        <li class="elementListFooter">
+            <a href="" target="_blank" class="elementLinkFooter">Facebook</a>
+            <span class="dividersFooter"></span>
+            <img src="../resources/facebook.svg" alt="facebook" height="40px">
+        </li>
+    </ul>
+</footer>
+<!--<script src="index.js"></script>-->
+</body>
+</html>
