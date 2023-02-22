@@ -275,10 +275,15 @@ body {
 .container .timeline-images {
   position: absolute;
   width: 40px;
+  height: 40px;
   border-radius: 50%;
   right: -20px;
   top: 32px;
   z-index: 10;
+  background-color: #EEEEEE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-container .timeline-images {
@@ -443,6 +448,9 @@ body {
   .right-container, .left-container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .timeline-images {
+    display: none !important;
   }
 }
 
