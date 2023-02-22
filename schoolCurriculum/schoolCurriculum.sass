@@ -230,7 +230,7 @@ body
 
 .text-box
   padding: 20px 30px
-  background: #fff
+  background: #EEEEEE
   position: relative
   border-radius: 6px
   font-size: 15px
@@ -257,7 +257,7 @@ body
   position: absolute
   width: 6px
   height: 100%
-  background: #ffffff
+  background: #EEEEEE
   top: 0
   left: 50%
   margin-left: -3px
@@ -271,11 +271,25 @@ body
     height: 100%
 
 .text-box h2
-  font-weight: 600
+  font-family: "Josefin Sans", sans-serif
+  font-size: 24px
+  line-height: 24px
+  font-weight: 700
 
-.text-box small
+.text-box strong
   display: inline-block
-  margin-bottom: 15px
+  font-family: "Josefin Sans", sans-serif
+  font-size: 24px
+  line-height: 24px
+  font-weight: 700
+  color: #00ADB5
+
+
+.text-box p
+  font-family: Poppins, sans-serif
+  font-weight: 400
+  font-size: 16px
+  line-height: 30px
 
 .left-container-arrow
   height: 0
@@ -285,7 +299,7 @@ body
   z-index: 1
   border-top: 15px solid transparent
   border-bottom: 15px solid transparent
-  border-left: 15px solid #fff
+  border-left: 15px solid #EEEEEE
   right: -15px
 
 .right-container-arrow
@@ -296,7 +310,7 @@ body
   z-index: 1
   border-top: 15px solid transparent
   border-bottom: 15px solid transparent
-  border-right: 15px solid #fff
+  border-right: 15px solid #EEEEEE
   left: -15px
 
 @media screen and (max-width: 1000px)
@@ -327,6 +341,25 @@ body
     left: 10px
 
   .left-container-arrow, .right-container-arrow
-    border-right: 15px solid #ffffff
+    border-right: 15px solid #EEEEEE
     border-left: #00ADB5
     left: -15px
+
+@media screen and (max-width: 500px)
+  .timeline
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  .timeline::after
+    display: none
+
+  .container img
+    display: none
+
+  .right-container-arrow, .left-container-arrow
+    display: none
+
+  .right-container, .left-container
+    padding-left: 5px
+    padding-right: 5px
