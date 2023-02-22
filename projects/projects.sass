@@ -196,3 +196,170 @@ body
     -webkit-mask-position: 150%
   to
     -webkit-mask-position: -50%
+
+// SASS about content
+
+#content
+  background-color: #1F2022
+
+.cards-projects
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  padding: 40px 0
+
+.box-projects
+  position: relative
+  width: 320px
+  height: 400px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 40px 30px
+  transition: 0.5s
+
+.box-projects::before
+  content: ' '
+  position: absolute
+  top: 0
+  left: 50px
+  width: 50%
+  height: 100%
+  text-decoration: none
+  background: #EEEEEE
+  border-radius: 8px
+  transform: skewX(15deg)
+  transition: 0.5s
+
+.box-projects::after
+  content: ''
+  position: absolute
+  top: 0
+  left: 50px
+  width: 50%
+  height: 100%
+  background: #EEEEEE
+  border-radius: 8px
+  transform: skewX(15deg)
+  transition: 0.5s
+  filter: blur(30px)
+
+.box-projects:hover:before, .box-projects:hover:after
+  transform: skewX(0deg)
+  left: 20px
+  width: calc(100% - 90px)
+
+.box-projects:nth-child(1):before, .box-projects:nth-child(1):after
+  background: #0055A4
+
+.box-projects:nth-child(2):before, .box-projects:nth-child(2):after
+  background: #ffffff
+
+.box-projects:nth-child(3):before, .box-projects:nth-child(3):after
+  background: #EF4135
+
+.box-projects span
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 5
+  pointer-events: none
+
+.box-projects span::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 0
+  height: 0
+  border-radius: 8px
+  background: rgba(255,255,255,0.1)
+  backdrop-filter: blur(10px)
+  opacity: 0
+  transition: 0.1s
+  animation: animate 2s ease-in-out infinite
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+
+.box-projects:hover span::before
+  top: -50px
+  left: 50px
+  width: 100px
+  height: 100px
+  opacity: 1
+
+.box-projects span::after
+  content: ''
+  position: absolute
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  border-radius: 8px
+  background: rgba(255, 255, 255, 0.1)
+  backdrop-filter: blur(10px)
+  opacity: 0
+  transition: 0.5s
+  animation: animate 2s ease-in-out infinite
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08)
+  animation-delay: -1s
+
+.box-projects:hover span:after
+  bottom: -50px
+  right: 50px
+  width: 100px
+  height: 100px
+  opacity: 1
+
+@keyframes animate
+  0%, 100%
+    transform: translateY(10px)
+  50%
+    transform: translate(-10px)
+
+.content-card-project
+  position: relative
+  left: 0
+  padding: 20px 40px
+  background: rgba(255,255,255,0.05)
+  backdrop-filter: blur(10px)
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1)
+  border-radius: 8px
+  z-index: 1
+  color: black
+
+.box-projects:hover .content-card-project
+  left: -25px
+  padding: 60px 40px
+
+.content-card-project p
+  font-family: "Josefin Sans", sans-serif
+  font-size: 16px
+  line-height: 16px
+
+.content-card-project h2
+  font-family: "Josefin Sans", sans-serif
+  font-size: 24px
+  line-height: 24px
+  font-weight: 700
+
+.content-card-project a
+  display: inline-block
+  font-size: 18px
+  line-height: 18px
+  font-family: "Josefin Sans", sans-serif
+  color: black
+  background: #EEEEEE
+  padding: 10px
+  border-radius: 4px
+  text-decoration: none
+  font-weight: 700
+  margin-top: 5px
+
+.content-card-project a:hover
+  background-color: #1F2022
+  box-shadow: inset 0 0 0 1px #EEEEEE
+  color: #EEEEEE
