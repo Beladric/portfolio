@@ -312,7 +312,7 @@ body
   height: 0
   width: 0
   position: absolute
-  top: 28px
+  top: 22px
   z-index: 1
   border-top: 15px solid transparent
   border-bottom: 15px solid transparent
@@ -323,7 +323,7 @@ body
   height: 0
   width: 0
   position: absolute
-  top: 28px
+  top: 22px
   z-index: 1
   border-top: 15px solid transparent
   border-bottom: 15px solid transparent
@@ -401,3 +401,27 @@ body
   .right-container, .left-container
     padding-left: 20px
     padding-right: 20px
+
+// SASS about loader
+
+#preloader
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  width: 100%
+
+.loader
+  border: 16px solid #EEEEEE
+  border-radius: 50%
+  border-top: 16px solid #3498db
+  width: 120px
+  height: 120px
+  -webkit-animation: spin 2s linear infinite
+  animation: spin 2s linear infinite
+
+@keyframes spin
+  0%
+    transform: rotate(0deg)
+  100%
+    transform: rotate(360deg)
