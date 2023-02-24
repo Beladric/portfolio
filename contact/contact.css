@@ -163,7 +163,8 @@ body {
   padding: 0;
   width: 100%;
   max-width: 1920px;
-  justify-content: space-around;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #dividerFooter {
@@ -180,6 +181,7 @@ body {
   flex-direction: column;
   height: 100px;
   justify-content: space-around;
+  margin: 30px;
 }
 
 .elementLinkFooter {
