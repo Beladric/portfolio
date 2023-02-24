@@ -216,6 +216,18 @@ body {
     -webkit-mask-position: -50%;
   }
 }
+#WorkExperiencesTitle {
+  font-size: 24px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  line-height: 24px;
+  color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0 20px;
+}
+
 #content {
   background-color: #1F2022;
 }
@@ -232,7 +244,7 @@ body {
   transform: translate3d(0, 0, 0);
   position: relative;
   width: 50%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 164px);
   min-height: 600px;
   color: #EEEEEE;
   overflow: hidden;
@@ -289,7 +301,7 @@ body {
   top: 55%;
   opacity: 0;
 }
-.tl-content h1 {
+.tl-content h2 {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   color: #00ADB5;
@@ -363,6 +375,96 @@ body {
   .tl-item {
     width: 100%;
   }
+}
+#military-reserve {
+  padding: 20px;
+}
+
+#military-reserve h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #EEEEEE;
+  text-align: center;
+}
+
+#military-reserve h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #EEEEEE;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(238, 238, 238, 0.8);
+  background-color: #EEEEEE;
+  margin: 30px;
+  max-width: 300px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card * {
+  margin: 10px !important;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(238, 238, 238, 0.8);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.card:hover img {
+  filter: grayscale(1);
+}
+
+.card img {
+  height: 200px;
+  filter: grayscale(0);
+}
+
+.card h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 0;
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+}
+
+.card span {
+  height: 1px;
+  background-color: #1F2022;
+  width: 80%;
+}
+
+#Stellantis h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: #EEEEEE;
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=workExperience.css.map */
