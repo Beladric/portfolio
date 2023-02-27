@@ -155,6 +155,11 @@ body {
   background-color: #1F2022;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
 #firstSectionHomeD {
   background-color: #1F2022;
   width: 100%;
@@ -218,6 +223,90 @@ body {
     width: 80%;
   }
 }
+#skills {
+  display: flex;
+  flex-direction: column;
+}
+
+#skillsTitle {
+  width: 100%;
+  color: #EEEEEE;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+
+.skillsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.outer {
+  box-shadow: inset 0 0 0 1px #00ADB5;
+  border-radius: 50%;
+  position: relative;
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+}
+
+.inner {
+  height: 80px;
+  width: 80px;
+  left: 10px;
+  top: 10px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #1F2022;
+  z-index: 2;
+  box-shadow: inset 0 0 0 1px #00ADB5;
+}
+
+.SkillIcons {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.SkillImgPercentage {
+  display: flex;
+  flex-direction: column;
+}
+
+.percentage {
+  color: #EEEEEE;
+  font-family: "Josefin Sans", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.FirstHalf {
+  background-color: #00ADB5;
+  clip: rect(0, 50px, 100px, 0);
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.SecondHalf {
+  background-color: #00ADB5;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  clip: rect(0, 100px, 100px, 50px);
+}
+
 #footer {
   width: 100%;
   background-color: #1F2022;
