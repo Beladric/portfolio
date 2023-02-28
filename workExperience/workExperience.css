@@ -187,6 +187,8 @@ body {
   height: 100px;
   justify-content: space-around;
   margin: 30px;
+  width: 100px;
+  align-items: center;
 }
 
 .elementLinkFooter {
