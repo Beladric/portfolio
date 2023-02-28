@@ -317,6 +317,40 @@ body {
   font-weight: 600;
 }
 
+#languageSpoken {
+  display: flex;
+  flex-direction: column;
+}
+
+#divLanguages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#languageSpokenTitle {
+  font-family: "Josefin Sans", sans-serif;
+  color: #EEEEEE;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.languageCard {
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  margin: 20px;
+  transition: filter 0.3s ease-in-out;
+}
+
+.languageCard:hover {
+  filter: grayscale(0.7);
+  cursor: pointer;
+  transition: filter 0.3s ease-in-out;
+}
+
 #footer {
   width: 100%;
   background-color: #1F2022;
