@@ -455,6 +455,7 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100%;
+  background-color: #1F2022;
 }
 
 .loader {
