@@ -385,16 +385,18 @@ body {
   padding: 20px;
 }
 
-#military-reserve h2 {
+#military-reserve h2, #Stellantis h2 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   color: #EEEEEE;
   text-align: center;
+  margin: 0;
+  padding: 10px 0 10px 0;
 }
 
-#military-reserve h3 {
+#military-reserve h3, #Stellantis h3 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -466,17 +468,6 @@ body {
   position: relative;
 }
 
-#Stellantis h2 {
-  font-family: "Josefin Sans", sans-serif;
-  color: #EEEEEE;
-  margin: 0;
-  text-align: center;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 700;
-  padding: 10px 0 10px 0;
-}
-
 .color {
   color: #00ADB5;
 }
@@ -543,6 +534,13 @@ body {
 .tab {
   flex-direction: column;
   width: 100%;
+}
+
+#Stellantis p, #Stellantis li {
+  font-family: "Josefin Sans", sans-serif;
+  color: #EEEEEE;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 1000px) {
