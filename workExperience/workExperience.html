@@ -120,38 +120,46 @@
     <section id="Stellantis">
         <h2>Stellantis</h2>
         <h3>Work hierarchical assignment</h3>
-        <p>Incorporated in Information & Communication Technology department (ICT) the goal of this entity is to answer internal digital needs. If we go deeply, I am in Enlarged Europe ICT in Digital which is the ICT in scoped to Europe.</p>
-        <div class="tabNavigation">
-            <button class="tabButton" onclick="openTab('ICT')">ICT</button>
-            <button class="tabButton" onclick="openTab('EEID')">EEID</button>
-            <button class="tabButton" onclick="openTab('OPDC')">OPDC</button>
-            <button class="tabButton" onclick="openTab('TECI')">TECI</button>
-            <button class="tabButton" onclick="openTab('TIES')">TIES</button>
-        </div>
-        <div id="ICT" class="tab">
-            <p class="acronym">
-                <span class="color">I</span>nformation <span class="color">C</span>ommunication and <span class="color">T</span>echnologies
-            </p>
-        </div>
-        <div id="EEID" class="tab">
-            <p class="acronym">
-                <span class="color">E</span>nlarged <span class="color">E</span>urope <span class="color">I</span>ct and <span class="color">D</span>igital
-            </p>
-        </div>
-        <div id="OPDC" class="tab">
-            <p class="acronym">
-                <span class="color">OP</span>erations and <span class="color">D</span>ata <span class="color">C</span>enters
-            </p>
-        </div>
-        <div id="TECI" class="tab">
-            <p class="acronym">
-                <span class="color">TE</span>chnical and <span class="color">C</span>loud <span class="color">I</span>ntegration
-            </p>
-        </div>
-        <div id="TIES" class="tab">
-            <p class="acronym">
-                <span class="color">T</span>echnical <span class="color">I</span>ntegration <span></span>Expertise and Support
-            </p>
+        <div id="workAssignment">
+            <div class="tabNavigation">
+                <button class="tabButton" onclick="openTab('ICT', 'ICTB')" id="ICTB">ICT</button>
+                <p class="hierarchy">></p>
+                <button class="tabButton" onclick="openTab('EEID', 'EEIDB')" id="EEIDB">EEID</button>
+                <p class="hierarchy">></p>
+                <button class="tabButton" onclick="openTab('OPDC', 'OPDCB')" id="OPDCB">OPDC</button>
+                <p class="hierarchy">></p>
+                <button class="tabButton" onclick="openTab('TECI', 'TECIB')" id="TECIB">TECI</button>
+                <p class="hierarchy">></p>
+                <button class="tabButton" onclick="openTab('TIES', 'TIESB')" id="TIESB">TIES</button>
+            </div>
+            <div id="ICT" class="tab">
+                <p class="acronym">
+                    <span class="color">I</span>nformation <span class="color">C</span>ommunication and <span class="color">T</span>echnologies
+                </p>
+                <p>
+                    The information & communication technology department aim to answer internal digital needs.
+                </p>
+            </div>
+            <div id="EEID" class="tab">
+                <p class="acronym">
+                    <span class="color">E</span>nlarged <span class="color">E</span>urope <span class="color">I</span>ct and <span class="color">D</span>igital
+                </p>
+            </div>
+            <div id="OPDC" class="tab">
+                <p class="acronym">
+                    <span class="color">OP</span>erations and <span class="color">D</span>ata <span class="color">C</span>enters
+                </p>
+            </div>
+            <div id="TECI" class="tab">
+                <p class="acronym">
+                    <span class="color">TE</span>chnical and <span class="color">C</span>loud <span class="color">I</span>ntegration
+                </p>
+            </div>
+            <div id="TIES" class="tab">
+                <p class="acronym">
+                    <span class="color">T</span>echnical <span class="color">I</span>ntegration <span></span>Expertise and Support
+                </p>
+            </div>
         </div>
         <h3>Masters dissertation</h3>
         <p>During these 3 years a master dissertation was mandatory each year to pass next year and validate diploma. You will find them bellow, they contain what I have done.</p>

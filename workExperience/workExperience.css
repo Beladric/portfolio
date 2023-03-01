@@ -481,11 +481,16 @@ body {
   color: #00ADB5;
 }
 
-.acronym {
+.acronym, .hierarchy {
   font-family: "Josefin Sans", sans-serif;
   color: #EEEEEE;
   font-size: 20px;
   line-height: 20px;
+  text-align: center;
+}
+
+.hierarchy {
+  padding: 0 10px 0 10px;
 }
 
 .tab {
@@ -496,6 +501,55 @@ body {
   display: flex;
 }
 
+#ICTB {
+  background-color: #EEEEEE;
+}
+
+.tabNavigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.tabButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #00ADB5;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 20px;
+  transition: 0.3s ease-in-out background-color;
+}
+
+.tabButton:hover {
+  background-color: #EEEEEE;
+  transition: 0.3s ease-in-out background-color;
+}
+
+#workAssignment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20% 0 20%;
+}
+
+.tab {
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  #workAssignment {
+    padding: 0;
+  }
+}
 #preloader {
   display: flex;
   align-items: center;
