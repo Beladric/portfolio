@@ -179,7 +179,7 @@ body {
   width: 50%;
 }
 
-#presentation p {
+#presentation p, #presentation h1 {
   margin: 0;
   width: 30vw;
 }
@@ -192,7 +192,7 @@ body {
   font-family: Poppins, sans-serif;
 }
 
-#presentation p:nth-of-type(2) {
+#presentation h1 {
   color: #00ADB5;
   font-size: 100px;
   font-family: Montserrat, sans-serif;
@@ -221,7 +221,7 @@ body {
     justify-content: center;
     height: auto;
   }
-  #presentation p {
+  #presentation p, #presentation h1 {
     width: 80%;
   }
 }
