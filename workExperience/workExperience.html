@@ -181,6 +181,17 @@
         </div>
         <h3>Masters dissertation</h3>
         <p>During these 3 years a master dissertation was mandatory each year to pass next year and validate diploma. You will find them bellow, they contain what I have done.</p>
+        <div id="downloadDissertation">
+            <label for="selectYear"></label>
+            <select name="selectYear" id="selectYear">
+                <option value="firstYear">First year</option>
+                <option value="secondYear">Second year</option>
+                <option value="lastYear">Last year</option>
+            </select>
+            <button id="downloadDissertationB" onclick="downloadDissertation()">
+                Download
+            </button>
+        </div>
     </section>
     <section id="military-reserve">
         <h2>Military reserve</h2>
@@ -235,6 +246,7 @@
 </footer>
 <script type="text/javascript" src="../scripts/loader.js"></script>
 <script type="text/javascript" src="../scripts/tabulationNavbar.js"></script>
+<script type="text/javascript" src="../scripts/downloadDissertation.js"></script>
 <!--<script src="index.js"></script>-->
 </body>
 </html>
