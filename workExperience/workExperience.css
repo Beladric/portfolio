@@ -561,6 +561,9 @@ body {
   font-size: 18px;
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
 }
 
 #downloadDissertationB:hover {
