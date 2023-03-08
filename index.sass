@@ -155,7 +155,7 @@ body
 #firstSectionHomeD
   background-color: #1F2022
   width: 100%
-  height: calc(100vh - 100px)
+  height: 600px
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -166,6 +166,7 @@ body
   height: 100%
   justify-content: center
   width: 50%
+  align-items: center
 
 #presentation p, #presentation h1
   margin: 0
@@ -193,10 +194,22 @@ body
 
 #picture
   width: 50%
+  display: flex
+  justify-content: center
+
+#picture img
+  border-radius: 20%
+  height: 500px
+  aspect-ratio: 2316/3088
 
 @media screen and (max-width: 1000px)
+  #firstSectionHomeD
+    height: auto
   #picture
     width: 100%
+  #picture img
+    width: 60%
+    height: auto
   #presentation
     width: 100%
     align-items: center
