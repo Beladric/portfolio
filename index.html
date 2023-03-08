@@ -283,14 +283,13 @@
         <div id="CVDownload">
             <label for="selectCVLanguage"></label>
             <select name="CVLanguage" id="selectCVLanguage">
-                <option value="chooseLanguage">Coming soon</option>
-                <option value="French" disabled>🇫🇷&emsp;French</option>
-                <option value="English" disabled>🇬🇧&emsp;English</option>
+                <option value="French">🇫🇷&emsp;French</option>
+                <option value="English">🇬🇧&emsp;English</option>
                 <option value="German" disabled>🇩🇪&emsp;German</option>
             </select>
-            <button id="DownloadButton">
+            <a id="DownloadButton" download>
                 Download
-            </button>
+            </a>
         </div>
     </section>
 </main>
@@ -320,5 +319,6 @@
     </ul>
 </footer>
 <script src="scripts/loader.js"></script>
+<script src="scripts/downloadCV.js"></script>
 </body>
 </html>
