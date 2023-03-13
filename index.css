@@ -1,6 +1,9 @@
-HTML, body {
-  background-color: #1F2022;
+html {
+  aspect-ratio: 16/9;
   max-width: 1920px;
+  background-color: #1F2022;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 body {

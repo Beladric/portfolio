@@ -1,3 +1,11 @@
+html {
+  aspect-ratio: 16/9;
+  max-width: 1920px;
+  background-color: #1F2022;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -536,7 +544,7 @@ body {
   width: 100%;
 }
 
-#Stellantis p, #Stellantis li {
+#Stellantis p {
   font-family: "Josefin Sans", sans-serif;
   color: #EEEEEE;
   font-size: 16px;
