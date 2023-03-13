@@ -188,7 +188,7 @@ body {
 }
 
 #presentation p, #presentation h1 {
-  margin: 0;
+  margin: 0 10% 0 10%;
 }
 
 #presentation p:first-of-type {
@@ -406,6 +406,7 @@ body {
   cursor: pointer;
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 
 #DownloadButton:hover {
