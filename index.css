@@ -183,14 +183,12 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
   width: 50%;
-  align-items: center;
+  justify-content: center;
 }
 
 #presentation p, #presentation h1 {
   margin: 0;
-  width: 30vw;
 }
 
 #presentation p:first-of-type {
