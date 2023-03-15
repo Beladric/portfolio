@@ -374,6 +374,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
+  #Stellantis, #military-reserve {
+    padding: 50px 5% 50px 5%;
+  }
   #workAssignment {
     padding: 0;
   }
