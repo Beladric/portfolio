@@ -217,8 +217,11 @@ body {
   }
   .left-container-arrow, .right-container-arrow {
     border-right: 15px solid #EEEEEE;
-    border-left: #00ADB5;
+    border-left: #00ADB5 !important;
     left: -15px;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #EEEEEE;
   }
 }
 @media screen and (max-width: 500px) {
